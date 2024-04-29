@@ -22,8 +22,8 @@ export class SideBarComponent {
 
   navigateTo(pageName: string) {
     console.log('Navigating to:', pageName);
-    // const kebabCaseName = this.toKebabCase(pageName);
-    // this.router.navigate([kebabCaseName]);
+    const kebabCaseName = this.toKebabCase(pageName);
+    this.router.navigate([kebabCaseName]);
   }
 
   private toKebabCase(str: string) {

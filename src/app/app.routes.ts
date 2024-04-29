@@ -26,7 +26,7 @@ export const routes: Routes = [
     { path: 'use-cases', component: UseCasesComponent },
     { path: 'media', component: MediaComponent },
     { path: 'support', component: SupportComponent },
-    { path: 'producuts', component: ProductComponent },
+    { path: 'products', component: ProductComponent },
     { path: 'applications', component: ApplicationComponent },
     { path: 'ems', component: EmsComponent },
     { path: 'hyve', component: HyveComponent },

@@ -41,8 +41,8 @@
 
             <ul class="space-y-2 font-medium">
                 <li>
-                    <a href="./home"
-                        class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-600 hover:text-white dark:hover:bg-gray-700 group">
+                    <button (click)="navigateTo('home')" 
+                        class="flex items-center w-full p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-600 hover:text-white dark:hover:bg-gray-700 group">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home stroke-current"
                             width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" fill="none"
                             stroke-linecap="round" stroke-linejoin="round"
@@ -56,7 +56,7 @@
                         } @else {
                         <span class="ms-3">Home</span>
                         }
-                    </a>
+                    </button>
                 </li>
 
                 <li>
@@ -76,7 +76,7 @@
                     </button>
                     <ul id="personal-setting" class=" py-2 space-y-2">
                         <li>
-                            <a href="./my-profile"
+                            <button (click)="navigateTo('my-profile')"
                                 class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-600 hover:text-white dark:text-white dark:hover:bg-gray-700"
                                 [class.pl-11]="!isCollapse" [class.pl-4]="isCollapse">
                                 <svg xmlns="http://www.w3.org/2000/svg"
@@ -94,10 +94,10 @@
                                     My Profile
                                 </div>
                                 }
-                            </a>
+                            </button>
                         </li>
                         <li>
-                            <a href="./my-company"
+                            <button (click)="navigateTo('my-company')"
                                 class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-600 hover:text-white dark:text-white dark:hover:bg-gray-700"
                                 [class.pl-11]="!isCollapse" [class.pl-4]="isCollapse">
 
@@ -122,10 +122,10 @@
                                 }
 
 
-                            </a>
+                            </button>
                         </li>
                         <li>
-                            <a href="./my-project"
+                            <button (click)="navigateTo('my-project')"
                                 class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-600 hover:text-white dark:text-white dark:hover:bg-gray-700"
                                 [class.pl-11]="!isCollapse" [class.pl-4]="isCollapse">
                                 <svg xmlns="http://www.w3.org/2000/svg"
@@ -150,10 +150,10 @@
                                 </div>
                                 }
 
-                            </a>
+                            </button>
                         </li>
                         <li>
-                            <a href="./my-document"
+                            <button (click)="navigateTo('my-document')"
                                 class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-600 hover:text-white dark:text-white dark:hover:bg-gray-700"
                                 [class.pl-11]="!isCollapse" [class.pl-4]="isCollapse">
                                 <svg xmlns="http://www.w3.org/2000/svg"
@@ -175,7 +175,7 @@
                                 </div>
                                 }
 
-                            </a>
+                            </button>
                         </li>
                     </ul>
                 </li>
@@ -197,7 +197,7 @@
                     </button>
                     <ul id="information-dropdown" class=" py-2 space-y-2">
                         <li>
-                            <a href="./my-inbox"
+                            <button (click)="navigateTo('my-inbox')"
                                 class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-600 hover:text-white dark:text-white dark:hover:bg-gray-700"
                                 [class.pl-11]="!isCollapse" [class.pl-4]="isCollapse">
                                 <svg xmlns="http://www.w3.org/2000/svg"
@@ -218,11 +218,11 @@
                                 </div>
                                 }
 
-                            </a>
+                            </button>
                         </li>
 
                         <li>
-                            <a href="./use-cases"
+                            <button (click)="navigateTo('use-cases')"
                                 class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-600 hover:text-white dark:text-white dark:hover:bg-gray-700"
                                 [class.pl-11]="!isCollapse" [class.pl-4]="isCollapse">
                                 <svg xmlns="http://www.w3.org/2000/svg"
@@ -244,10 +244,10 @@
                                 </div>
                                 }
 
-                            </a>
+                            </button>
                         </li>
                         <li>
-                            <a href="./media"
+                            <button (click)="navigateTo('media')"
                                 class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-600 hover:text-white dark:text-white dark:hover:bg-gray-700"
                                 [class.pl-11]="!isCollapse" [class.pl-4]="isCollapse">
                                 <svg xmlns="http://www.w3.org/2000/svg"
@@ -266,10 +266,10 @@
                                 </div>
                                 }
 
-                            </a>
+                            </button>
                         </li>
                         <li>
-                            <a href="./support"
+                            <button (click)="navigateTo('support')"
                                 class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-600 hover:text-white dark:text-white dark:hover:bg-gray-700"
                                 [class.pl-11]="!isCollapse" [class.pl-4]="isCollapse">
 
@@ -290,7 +290,7 @@
                                 </div>
                                 }
 
-                            </a>
+                            </button>
                         </li>
                     </ul>
                 </li>
@@ -312,7 +312,7 @@
                     </button>
                     <ul id="product-services" class=" py-2 space-y-2">
                         <li>
-                            <a href="./producuts"
+                            <button (click)="navigateTo('products')"
                                 class="flex items-center p-2  text-gray-900 rounded-lg dark:text-white hover:bg-gray-600 hover:text-white dark:hover:bg-gray-700 group"  [class.pl-11]="!isCollapse" [class.pl-4]="isCollapse">
                                 <svg xmlns="http://www.w3.org/2000/svg"
                                     class="icon icon-tabler icon-tabler-clipboard-list stroke-current " width="24" height="24"
@@ -334,11 +334,11 @@
                                 <span
                                     class="inline-flex items-center justify-center px-2 ms-3 text-sm font-medium text-white bg-[#75892b] rounded-full dark:bg-gray-700 dark:text-gray-300">New</span>
                                 }
-                            </a>
+                            </button>
                         </li>
 
                         <li>
-                            <a href="./applications"
+                            <button (click)="navigateTo('applications')"
                                 class="flex items-center p-2 text-gray-900 transition duration-75 rounded-lg  group hover:bg-gray-600 hover:text-white dark:text-white dark:hover:bg-gray-700"  [class.pl-11]="!isCollapse" [class.pl-4]="isCollapse">
                                 <svg xmlns="http://www.w3.org/2000/svg"
                                     class="icon icon-tabler stroke-current icon-tabler-mood-heart" width="24"
@@ -359,10 +359,10 @@
                                 </div>
                                 }
 
-                            </a>
+                            </button>
                         </li>
                         <li>
-                            <a href="./ems"
+                            <button (click)="navigateTo('ems')"
                                 class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-600 hover:text-white dark:text-white dark:hover:bg-gray-700"
                                 [class.pl-11]="!isCollapse" [class.pl-4]="isCollapse">
                                 <svg xmlns="http://www.w3.org/2000/svg"
@@ -380,10 +380,10 @@
                                     EMS
                                 </div>
                                 }
-                            </a>
+                            </button>
                         </li>
                         <li>
-                            <a href="./hyve"
+                            <button (click)="navigateTo('hyve')"
                                 class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-600 hover:text-white dark:hover:bg-gray-700 group"  [class.pl-11]="!isCollapse" [class.pl-4]="isCollapse">
                                 <svg xmlns="http://www.w3.org/2000/svg"
                                     class="icon icon-tabler icon-tabler-clipboard-list stroke-current " width="24" height="24"
@@ -405,7 +405,7 @@
                                 <span
                                     class="inline-flex items-center justify-center px-2 ms-3 text-sm font-medium text-white bg-[#75892b] rounded-full dark:bg-gray-700 dark:text-gray-300">New</span>
                                 }
-                            </a>
+                            </button>
                         </li>
                     </ul>
 
@@ -420,6 +420,6 @@
     </div>
 </aside>
 
-<div class="p-4 sm:ml-72">
+<div class="p-4"  [class.sm:ml-72]="!isCollapse" [class.sm:ml-24]="isCollapse">
     <router-outlet></router-outlet>
 </div>
