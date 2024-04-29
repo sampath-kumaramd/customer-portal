@@ -8,7 +8,7 @@
     </svg>
 </button>
 
-<aside id="logo-sidebar" [class.w-72]="!isCollapse" [class.w-20]="isCollapse"
+<aside id="logo-sidebar" [class.w-72]="!isCollapse" [class.w-24]="isCollapse"
     class="fixed top-0 left-0 z-40 h-screen transition-transform -translate-x-full sm:translate-x-0"
     aria-label="Sidebar">
     <div class=" h-full px-3 py-4 overflow-y-auto bg-gray-50 dark:bg-gray-800">
@@ -41,7 +41,7 @@
 
             <ul class="space-y-2 font-medium">
                 <li>
-                    <a href="#"
+                    <a href="./home"
                         class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-600 hover:text-white dark:hover:bg-gray-700 group">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home stroke-current"
                             width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" fill="none"
@@ -64,7 +64,7 @@
                         class="flex items-center w-full p-2 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-200 hover:text-[#768f1c] dark:text-white dark:hover:bg-gray-700"
                         aria-controls="personal-setting" data-collapse-toggle="personal-setting">
                         @if (isCollapse) {
-                        <span class="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap">MY </span>
+                        <span class="flex-1 text-left rtl:text-right whitespace-nowrap">MY </span>
                         } @else {
                         <span class="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap">MY PERSONAL SETTINGS</span>
                         }
@@ -74,11 +74,11 @@
                                 d="m1 1 4 4 4-4" />
                         </svg>
                     </button>
-                    <ul id="personal-setting" class="hidden py-2 space-y-2">
+                    <ul id="personal-setting" class=" py-2 space-y-2">
                         <li>
-                            <a href="#"
+                            <a href="./my-profile"
                                 class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-600 hover:text-white dark:text-white dark:hover:bg-gray-700"
-                                [class.pl-11]="!isCollapse" [class.pl-0]="isCollapse">
+                                [class.pl-11]="!isCollapse" [class.pl-4]="isCollapse">
                                 <svg xmlns="http://www.w3.org/2000/svg"
                                     class="icon icon-tabler icon-tabler-user-circle  stroke-current" width="24"
                                     height="24" viewBox="0 0 24 24" stroke-width="1.5" fill="none"
@@ -97,9 +97,9 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#"
+                            <a href="./my-company"
                                 class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-600 hover:text-white dark:text-white dark:hover:bg-gray-700"
-                                [class.pl-11]="!isCollapse" [class.pl-0]="isCollapse">
+                                [class.pl-11]="!isCollapse" [class.pl-4]="isCollapse">
 
                                 <svg xmlns="http://www.w3.org/2000/svg"
                                     class="icon icon-tabler icon-tabler-building-skyscraper  stroke-current" width="24"
@@ -125,9 +125,9 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#"
+                            <a href="./my-project"
                                 class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-600 hover:text-white dark:text-white dark:hover:bg-gray-700"
-                                [class.pl-11]="!isCollapse" [class.pl-0]="isCollapse">
+                                [class.pl-11]="!isCollapse" [class.pl-4]="isCollapse">
                                 <svg xmlns="http://www.w3.org/2000/svg"
                                     class="icon icon-tabler icon-tabler-adjustments  stroke-current" width="24"
                                     height="24" viewBox="0 0 24 24" stroke-width="1.5" fill="none"
@@ -153,9 +153,9 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#"
+                            <a href="./my-document"
                                 class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-600 hover:text-white dark:text-white dark:hover:bg-gray-700"
-                                [class.pl-11]="!isCollapse" [class.pl-0]="isCollapse">
+                                [class.pl-11]="!isCollapse" [class.pl-4]="isCollapse">
                                 <svg xmlns="http://www.w3.org/2000/svg"
                                     class="icon icon-tabler icon-tabler-clipboard-text  stroke-current" width="24"
                                     height="24" viewBox="0 0 24 24" stroke-width="1.5" fill="none"
@@ -185,22 +185,21 @@
                         class="flex items-center w-full p-2 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-200 hover:text-[#768f1c] dark:text-white dark:hover:bg-gray-700"
                         aria-controls="information-dropdown" data-collapse-toggle="information-dropdown">
                         @if (isCollapse) {
-                        <span class="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap">MY </span>
+                        <span class="flex-1 text-left rtl:text-right whitespace-nowrap">MY </span>
                         } @else {
                         <span class="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap">MY INFORMATION HUB </span>
                         }
-
                         <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
                             viewBox="0 0 10 6">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="m1 1 4 4 4-4" />
                         </svg>
                     </button>
-                    <ul id="information-dropdown" class="hidden py-2 space-y-2">
+                    <ul id="information-dropdown" class=" py-2 space-y-2">
                         <li>
-                            <a href="#"
+                            <a href="./my-inbox"
                                 class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-600 hover:text-white dark:text-white dark:hover:bg-gray-700"
-                                [class.pl-11]="!isCollapse" [class.pl-0]="isCollapse">
+                                [class.pl-11]="!isCollapse" [class.pl-4]="isCollapse">
                                 <svg xmlns="http://www.w3.org/2000/svg"
                                     class="icon icon-tabler stroke-current icon-tabler-mail" width="24" height="24"
                                     viewBox="0 0 24 24" stroke-width="1.5" fill="none" stroke-linecap="round"
@@ -223,9 +222,9 @@
                         </li>
 
                         <li>
-                            <a href="#"
+                            <a href="./use-cases"
                                 class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-600 hover:text-white dark:text-white dark:hover:bg-gray-700"
-                                [class.pl-11]="!isCollapse" [class.pl-0]="isCollapse">
+                                [class.pl-11]="!isCollapse" [class.pl-4]="isCollapse">
                                 <svg xmlns="http://www.w3.org/2000/svg"
                                     class="icon icon-tabler stroke-current icon-tabler-mood-heart" width="24"
                                     height="24" viewBox="0 0 24 24" stroke-width="1.5" fill="none"
@@ -248,9 +247,9 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#"
+                            <a href="./media"
                                 class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-600 hover:text-white dark:text-white dark:hover:bg-gray-700"
-                                [class.pl-11]="!isCollapse" [class.pl-0]="isCollapse">
+                                [class.pl-11]="!isCollapse" [class.pl-4]="isCollapse">
                                 <svg xmlns="http://www.w3.org/2000/svg"
                                     class="icon icon-tabler stroke-current icon-tabler-brand-youtube" width="24"
                                     height="24" viewBox="0 0 24 24" stroke-width="1.5" fill="none"
@@ -270,9 +269,9 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#"
+                            <a href="./support"
                                 class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-600 hover:text-white dark:text-white dark:hover:bg-gray-700"
-                                [class.pl-11]="!isCollapse" [class.pl-0]="isCollapse">
+                                [class.pl-11]="!isCollapse" [class.pl-4]="isCollapse">
 
                                 <svg xmlns="http://www.w3.org/2000/svg"
                                     class="icon icon-tabler stroke-current icon-tabler-help-hexagon" width="24"
@@ -301,7 +300,7 @@
                         class="flex items-center w-full p-2 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-200 hover:text-[#768f1c] dark:text-white dark:hover:bg-gray-700"
                         aria-controls="product-services" data-collapse-toggle="product-services">
                         @if (isCollapse) {
-                        <span class="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap">PR </span>
+                        <span class="flex-1 text-left rtl:text-right whitespace-nowrap">PR </span>
                         } @else {
                         <span class="flex-1 ms-3 text-left rtl:text-right whitespace-nowrap">PRODUCT & SERVICES </span>
                         }
@@ -311,13 +310,13 @@
                                 d="m1 1 4 4 4-4" />
                         </svg>
                     </button>
-                    <ul id="product-services" class="hidden py-2 space-y-2">
+                    <ul id="product-services" class=" py-2 space-y-2">
                         <li>
-                            <a href="#"
-                                class="flex items-center p-2  pl-11 text-gray-900 rounded-lg dark:text-white hover:bg-gray-600 hover:text-white dark:hover:bg-gray-700 group">
+                            <a href="./producuts"
+                                class="flex items-center p-2  text-gray-900 rounded-lg dark:text-white hover:bg-gray-600 hover:text-white dark:hover:bg-gray-700 group"  [class.pl-11]="!isCollapse" [class.pl-4]="isCollapse">
                                 <svg xmlns="http://www.w3.org/2000/svg"
-                                    class="icon icon-tabler icon-tabler-clipboard-list" width="24" height="24"
-                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none"
+                                    class="icon icon-tabler icon-tabler-clipboard-list stroke-current " width="24" height="24"
+                                    viewBox="0 0 24 24" stroke-width="1.5" fill="none"
                                     stroke-linecap="round" stroke-linejoin="round">
                                     <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                     <path
@@ -333,17 +332,14 @@
                                 } @else {
                                 <span class="flex-1 ms-3 whitespace-nowrap">Products</span>
                                 <span
-                                    class="inline-flex items-center justify-center px-2 ms-3 text-sm font-medium text-white bg-[#75892b] bg-gray-100 rounded-full dark:bg-gray-700 dark:text-gray-300">New</span>
-
+                                    class="inline-flex items-center justify-center px-2 ms-3 text-sm font-medium text-white bg-[#75892b] rounded-full dark:bg-gray-700 dark:text-gray-300">New</span>
                                 }
-
-
                             </a>
                         </li>
 
                         <li>
-                            <a href="#"
-                                class="flex items-center p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-600 hover:text-white dark:text-white dark:hover:bg-gray-700">
+                            <a href="./applications"
+                                class="flex items-center p-2 text-gray-900 transition duration-75 rounded-lg  group hover:bg-gray-600 hover:text-white dark:text-white dark:hover:bg-gray-700"  [class.pl-11]="!isCollapse" [class.pl-4]="isCollapse">
                                 <svg xmlns="http://www.w3.org/2000/svg"
                                     class="icon icon-tabler stroke-current icon-tabler-mood-heart" width="24"
                                     height="24" viewBox="0 0 24 24" stroke-width="1.5" fill="none"
@@ -366,9 +362,9 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#"
+                            <a href="./ems"
                                 class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-600 hover:text-white dark:text-white dark:hover:bg-gray-700"
-                                [class.pl-11]="!isCollapse" [class.pl-0]="isCollapse">
+                                [class.pl-11]="!isCollapse" [class.pl-4]="isCollapse">
                                 <svg xmlns="http://www.w3.org/2000/svg"
                                     class="icon icon-tabler stroke-current icon-tabler-brand-youtube" width="24"
                                     height="24" viewBox="0 0 24 24" stroke-width="1.5" fill="none"
@@ -384,15 +380,14 @@
                                     EMS
                                 </div>
                                 }
-
                             </a>
                         </li>
                         <li>
-                            <a href="#"
-                                class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-600 hover:text-white dark:hover:bg-gray-700 group  pl-11">
+                            <a href="./hyve"
+                                class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-600 hover:text-white dark:hover:bg-gray-700 group"  [class.pl-11]="!isCollapse" [class.pl-4]="isCollapse">
                                 <svg xmlns="http://www.w3.org/2000/svg"
-                                    class="icon icon-tabler icon-tabler-clipboard-list " width="24" height="24"
-                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none"
+                                    class="icon icon-tabler icon-tabler-clipboard-list stroke-current " width="24" height="24"
+                                    viewBox="0 0 24 24" stroke-width="1.5"  fill="none"
                                     stroke-linecap="round" stroke-linejoin="round">
                                     <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                                     <path
@@ -408,11 +403,8 @@
                                 } @else {
                                 <span class="flex-1 ms-3 whitespace-nowrap">HYVE</span>
                                 <span
-                                    class="inline-flex items-center justify-center px-2 ms-3 text-sm font-medium text-white bg-[#75892b] bg-gray-100 rounded-full dark:bg-gray-700 dark:text-gray-300">New</span>
-
+                                    class="inline-flex items-center justify-center px-2 ms-3 text-sm font-medium text-white bg-[#75892b] rounded-full dark:bg-gray-700 dark:text-gray-300">New</span>
                                 }
-
-
                             </a>
                         </li>
                     </ul>
