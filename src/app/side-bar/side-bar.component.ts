@@ -13,6 +13,15 @@ import { Router } from '@angular/router';
 export class SideBarComponent {
 
   isCollapse: boolean = false;
+  imageType: string = 'black';
+
+  onMouseOverUser(): void {
+    this.imageType = 'white';
+  }
+  
+  onMouseOutUser(): void {
+    this.imageType = 'black';
+  }
 
   constructor(private router: Router) { }
 
